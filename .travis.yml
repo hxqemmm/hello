@@ -9,5 +9,6 @@ node_js:
 script:
   - npm start
   
+#产生一个进程运行mvn install，travis_wait然后每隔一分钟向构建日志写一小段20分钟
 install: 
   travis_wait mvn install
